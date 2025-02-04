@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Modern font family */
+    background-color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    -fx-background-color:#004ba0;; /* Gradient background */
+    -fx-padding: 15px;
+    -fx-text-fill: white; 
+    -fx-font-size:480px; /* Larger and modern font size */
+    -fx-font-weight: bold; /* Bold font */
+
+    -fx-alignment: center; 
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 4); /* Shadow effect */
+     -fx-border-radius: 0;
+    ;
+    
+    }
+
+
+/* Root Layout Background */
+.root {
+    -fx-background-image: url("file:///C:/Users/hp/Desktop/Assignments/HospitalManagementSystem/image.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    -fx-background-color: #004ba0; /* Complementary darker blue */
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2); /* Slight shadow for depth */
+}
+
+/* Navbar Button Styles */
+.nav-button {
+    -fx-background-color: transparent; 
+    -fx-text-fill: white; 
+    -fx-padding: 15; 
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-cursor: hand;
+    -fx-border-radius: 12px; /* Rounded corners */
+}
+
+/* Navbar Button Hover Effect */
+.nav-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    -fx-text-fill: #ffffff;
+}
+
+/* Tab Pane Styles */
+.tab-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    -fx-padding: 15px;
+    -fx-border-color: #dddddd; /* Softer border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.5, 0, 2); /* Subtle shadow */
+}
+
+/* Tab Styles */
+.tab {
+    -fx-background-color: #007bff; 
+    -fx-text-fill: white; 
+    -fx-font-size: 18px; 
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 10px 10px 0 0; /* Rounded corners */
+}
+
+.tab:hover {
+    -fx-background-color: #0056b3;
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: linear-gradient(to right, #0056b3, #007bff); /* Gradient buttons */
+    -fx-text-fill: white;
+    -fx-padding: 15px 30px; /* Larger buttons with more padding */
+    -fx-font-size: 20px; /* Modern button font size */
+    -fx-border-radius: 12px; /* More rounded corners */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.3, 0, 2); /* Button shadow */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #003d99, #0056b3); /* Darker on hover */
+}
+
+/* Footer Styles */
+.footer {
+    -fx-background-color: #004ba0; 
+    -fx-padding: 10px;
+    -fx-text-fill: white; 
+    -fx-font-size: 14px; 
+    -fx-alignment: center;
+    -fx-border-radius: 0 0 10px 10px; /* Rounded footer edges */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, -2); /* Shadow for footer */
+}
+
+/* Form Styles */
+.text-field, .text-area {
+    -fx-border-color: #cccccc;
+    -fx-background-color: rgba(255, 255, 255, 0.9); 
+    -fx-padding: 8px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px; /* Rounded text fields */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.2, 0, 1); /* Slight shadow for form fields */
+}
+
+/* Focus Effect for Text Fields */
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #007bff; 
+    -fx-border-radius: 5px;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold; /* Make labels stand out */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .header, .footer, .navbar {
+        -fx-font-size: 27px; 
+    }
+
+    .button {
+        -fx-padding: 10px;
+    }
+
+    .nav-button {
+        -fx-font-size: 16px;
+    }
+}
